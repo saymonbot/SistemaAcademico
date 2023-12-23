@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="371.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Tela1Controller">
+   <children>
+      <BorderPane layoutX="-332.0" prefHeight="200.0" prefWidth="636.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Label text="TELA 1" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font>
+            </Label>
+         </center>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#msgErro" prefHeight="50.0" prefWidth="147.0" text="ERRO" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#msgInfo" prefHeight="50.0" prefWidth="147.0" text="INFO" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#msgConfirma" prefHeight="50.0" prefWidth="147.0" text="CONFIRMA" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="62.0" layoutY="10.0" mnemonicParsing="false" onAction="#msgAviso" prefHeight="50.0" prefWidth="147.0" text="AVISO" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#msgOkCancel" prefHeight="50.0" prefWidth="147.0" text="OK CANCEL" textAlignment="CENTER">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
