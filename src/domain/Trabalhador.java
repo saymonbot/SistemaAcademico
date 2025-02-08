@@ -78,7 +78,4 @@ public class Trabalhador extends Task<Void> {
 	public void setBarra(ProgressBar barra) {
 		this.barra = barra;
 	}
-	
-	
-	
 }

@@ -13,17 +13,14 @@ import javafx.scene.control.TabPane;
 
 public class PrincipalController {
 	
-	
     @FXML
     private Label lblData;
 
-    
     public void initialize() {
     	DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
     	Date data = new Date();
     	lblData.setText("Data atual: " + df.format(data));
     }
-    
     
     @FXML
     void abreTela1() {
@@ -37,7 +34,7 @@ public class PrincipalController {
 
     @FXML
     void abreTela3() {
-    	abreTab ("Relatório Gerencial", "Tela3.fxml");
+    	abreTab ("Relatï¿½rio Gerencial", "Tela3.fxml");
     }
 
     @FXML

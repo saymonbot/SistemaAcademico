@@ -18,7 +18,5 @@ public class JanelaPopUpController {
     	} catch (Exception e) {
     		e.printStackTrace();
     	}
-    	
     }
-
 }
