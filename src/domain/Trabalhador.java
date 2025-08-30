@@ -7,21 +7,21 @@ import javafx.scene.control.ProgressBar;
 public class Trabalhador extends Task<Void> {
 	
 	private String nome;
-	private int qtd;
+	private int quantidade;
 	private int tempo;
 	private ProgressBar barra;
 	
-	public Trabalhador(String nome, int qtd, int tempo, ProgressBar barra) {
+	public Trabalhador(String nome, int quantidade, int tempo, ProgressBar barra) {
 		this.nome = nome;
-		this.qtd = qtd;
+		this.quantidade = quantidade;
 		this.tempo = tempo;
 		this.barra = barra;
 	}
 	
 	@Override
 	protected Void call() throws Exception {
-		double incremento = 1.0/qtd;
-		for(int i=0; i<qtd; i++) {
+		double incremento = 1.0/quantidade;
+		for(int i=0; i<quantidade; i++) {
 			try {
 				Thread.sleep(tempo*1000);
 				Platform.runLater(()-> {
@@ -36,8 +36,8 @@ public class Trabalhador extends Task<Void> {
 	
 	public void produzir() {
 		barra.setProgress(0);
-		double incremento = 1.0/qtd;
-		for(int i=0; i<qtd; i++) {
+		double incremento = 1.0/quantidade;
+		for(int i=0; i<quantidade; i++) {
 			try {
 				Thread.sleep(tempo*1000);
 				barra.setProgress(barra.getProgress()+incremento);
@@ -55,12 +55,12 @@ public class Trabalhador extends Task<Void> {
 		this.nome = nome;
 	}
 
-	public int getQtd() {
-		return qtd;
+	public int getquantidade() {
+		return quantidade;
 	}
 
-	public void setQtd(int qtd) {
-		this.qtd = qtd;
+	public void setquantidade(int quantidade) {
+		this.quantidade = quantidade;
 	}
 
 	public int getTempo() {
