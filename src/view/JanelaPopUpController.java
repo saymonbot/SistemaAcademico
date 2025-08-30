@@ -11,7 +11,6 @@ public class JanelaPopUpController {
 	
 	@FXML
 	void fecharJanela() {
-	
 		try {
 			Stage stage = (Stage) label2.getScene().getWindow();
 			stage.close();

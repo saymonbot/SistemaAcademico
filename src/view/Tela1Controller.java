@@ -8,28 +8,28 @@ public class Tela1Controller {
 
     @FXML
     void msgAviso( ) {
-    	Mensagens.msgAviso("Aviso", "Esta � uma msg de aviso");
+    	Mensagens.msgAviso("Aviso", "Esta é uma msg de aviso");
     }
 
     @FXML
     void msgConfirma( ) {
-    	Mensagens.msgAviso("Confirma��o", "Esta � uma msg de Confirma��o");
+    	Mensagens.msgAviso("Confirmação", "Esta é uma msg de confirmação");
 
     }
 
     @FXML
     void msgErro( ) {
-    	Mensagens.msgAviso("Erro", "Esta � uma msg de Erro");
+    	Mensagens.msgAviso("Erro", "Esta é uma msg de erro");
     }
 
     @FXML
     void msgInfo( ) {
-    	Mensagens.msgAviso("Informa��o", "Esta � uma msg de Informa��o");
+    	Mensagens.msgAviso("Informação", "Esta é uma msg de informação");
     }
 
     @FXML
     void msgOkCancel( ) {
-    	ButtonType ret = Mensagens.msgOkCancel("Confirma��o", "Deseja excluir?");
+    	ButtonType ret = Mensagens.msgOkCancel("Confirmação", "Deseja excluir?");
     	if (ret==ButtonType.OK)
     		System.out.println("Excluir");
     	else

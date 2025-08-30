@@ -34,7 +34,7 @@ public class PrincipalController {
 
     @FXML
     void abreTela3() {
-    	abreTab ("Relat�rio Gerencial", "Tela3.fxml");
+    	abreTab ("Relatório Gerencial", "Tela3.fxml");
     }
 
     @FXML

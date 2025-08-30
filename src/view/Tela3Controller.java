@@ -19,10 +19,10 @@ public class Tela3Controller {
 		try {
 		int tam = Integer.parseInt(txtTamVetor.getText());
 		if(tam <=0)
-			throw new NumberFormatException("Negativo n�o permitido");
+			throw new NumberFormatException("Negativo não permitido");
 		vetor = new int[tam];
 		}catch (NumberFormatException e) {
-			Mensagens.msgErro("ERRO", "N�mero Inv�lido \n"+e.getMessage());
+			Mensagens.msgErro("ERRO", "Número inválido \n"+e.getMessage());
 			txtNr.setAccessibleText("");
 			txtNr.requestFocus();
 		}catch (Exception e) {
@@ -38,11 +38,11 @@ public class Tela3Controller {
 			pos++;
 			txtResult.setText(txtResult.getText()+nr+"\n");
 		}catch (NullPointerException e) {
-			Mensagens.msgErro("ERRO", "Vetor n�o foi instanciado");
+			Mensagens.msgErro("ERRO", "Vetor não foi instanciado");
 		}catch (ArrayIndexOutOfBoundsException e) {
 			Mensagens.msgErro("ERRO", "Vetor lotado");
 		}catch (NumberFormatException e) {
-			Mensagens.msgErro("ERRO", "N�mero Inv�lido");
+			Mensagens.msgErro("ERRO", "Número inválido");
 		}catch (Exception e) {
 			Mensagens.msgErro("ERRO", "Erro desconhecido");
 		}
